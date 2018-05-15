@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Байдар | Система перегородок</title>
+	<meta name="description" content="Проектирование и монтаж офисных перегородок по Казахстану">
+	<meta name="keywords" content="Байдар, система перегородок, перегородки, офисные перегородки, проектирование, монтаж, изготовление, продажа">
+
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon.ico?v=0" type="image/x-icon">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+</head>
+
+<body id="thanks-page">
+  <div class="page-wrapper">
+
+    <div class="page-top"><i class="fa fa-angle-double-up"></i></div>
+
+		<header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="/" class="logo">
+            <img src="./img/logo.png" alt="">
+          </a>
+
+          <h3 class="header-slogan">
+            Проектирование и монтаж
+            офисных перегородок
+            по Казахстану
+          </h3>
+
+          <div class="grow"></div>
+
+          <nav class="main-menu">
+            <div class="container">
+              <ul>
+                <li><a class="link" href="/#main">О нас</a></li>
+                <li><a class="link" href="/#organize">Мы предлагаем</a></li>
+                <li><a class="link" href="/#profile">Профили</a></li>
+                <li><a class="link" href="/#reviews">Отзывы</a></li>
+                <li><a class="link" href="/#contacts">Контакты</a></li>
+                <li class="visible-xs visible-sm"><a href="tel:+77273752059" class="text-phone">+7 (727) 375-20-59</a></li>
+                <li class="visible-xs visible-sm"><a href="tel:+77273752056" class="text-phone">+7 (727) 375-20-56</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="header-phone hidden-xxs">
+            <a href="tel:+77273752059" class="text-phone">+7 (727) 375-20-59</a>
+            <a href="tel:+77273752056" class="text-phone">+7 (727) 375-20-56</a>
+            <a href="#" class="accent-link" data-remodal-target="zvonok-modal">Обратный звонок</a>
+          </div>
+                    
+          <button class="hamburger hamburger--elastic hamburger--accessible">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>  
+      </div>
+		</header>  
+
+		<section class="section section-thanks">		
+			<div class="container">
+				<div class="section-thanks-content">
+          <div class="section-thanks-block">
+            <div class="section-title accent">Спасибо!</div>
+            <div class="section-title">Мы свяжемся с Вами
+                в ближайшее время!</div>
+            <a href="/" class="accent-link" id="thanks_button">Вернуться назад</a>
+          </div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-phone">
+            <a href="tel:+77273752059" class="text-phone">+7 (727) 375-20-59</a>
+            <a href="tel:+77273752056" class="text-phone">+7 (727) 375-20-56</a>
+          </div>
+          <a href="#" class="accent-link" data-remodal-target="zvonok-modal">Обратный звонок</a>
+          <a href="/" class="logo"><img src="./img/logo.png" alt=""></a>
+          <div class="footer-text">ТОО “БайДар”, 2018</div>
+          <div class="footer-company">
+            <a href="http://marketing-time.kz" target="_blank">
+              <img src="./img/company-logo.png" alt="">
+            </a>
+            <div>Разработано командой</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  </div>
+  
+  <div class="remodal remodal-small" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="remodal-title">
+      Обратный звонок
+    </div>
+    
+    <form class="five_crm_form" action="/mail.php" method="post">
+      <input type="hidden" name="info" value="Обратный звонок">
+      <div class="input-div">
+        <input type="text" class="input" name="name" placeholder="Введите имя">
+      </div>
+      <div class="input-div">
+        <input type="tel" class="input" name="phone" placeholder="Введите номер телефона*" required>
+        <span class="error-message">Заполните это поле</span>
+      </div>
+
+      <button class="button ajax-submit" type="submit" id="zakazat_zvonok">Оставить заявку</button>
+    </form>
+  </div>
+										
+	<link rel="stylesheet" href="./css/libs.min.css">
+	<link rel="stylesheet" href="./css/main.min.css">
+	<script src="./js/libs.min.js"></script>
+  <script src="./js/main.min.js"></script>
+  <script>
+    setTimeout(function() { window.location = "/"; }, 6000); 
+  </script>
+  <script charset="utf-8" async src="https://api.5crm.ru/ctm/get?public_token=dbd5313b-d0fd-4d54-9aaf-ff42c70840bf"></script>
+    
+</body>
+</html>

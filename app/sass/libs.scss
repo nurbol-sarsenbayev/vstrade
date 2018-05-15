@@ -1,0 +1,164 @@
+@import '../../node_modules/bootstrap-grid/dist/grid.min';
+@import '../../node_modules/remodal/dist/remodal';
+@import '../../node_modules/remodal/dist/remodal-default-theme';
+@import '../../node_modules/owl.carousel/dist/assets/owl.carousel.min';
+@import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min';
+@import '../../node_modules/slick-carousel/slick/slick.css';
+@import '../../node_modules/hamburgers/dist/hamburgers.min';
+@import '../../node_modules/font-awesome/css/font-awesome.min';
+@import './_vars';
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), 
+        url('../fonts/fontawesome/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), 
+        url('../fonts/fontawesome/fontawesome-webfont.woff?v=4.7.0') format('woff'), 
+        url('../fonts/fontawesome/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), 
+        url('../fonts/fontawesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+}
+
+.owl-carousel {
+  &.has-nav {
+    padding-right: 150px;
+    position: relative;
+
+    .owl {
+      &-nav {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+
+	.owl {
+    &-item {
+      img {
+        width: auto;
+        margin: 0 auto;
+      }
+    }
+
+    &-nav {
+      margin-top: 20px;
+    }
+
+    &-prev, &-next {
+      width: 58px;
+      height: 58px;
+      border: 3px solid $accent !important;
+      background-image: url('../img/arrow-left-2.png') !important;
+      background-repeat: no-repeat !important;
+      background-position: center center !important;
+      outline: 0;
+    }
+
+    &-prev {
+      margin-right: 3px;
+    }
+
+    &-next {
+      transform: rotateZ(180deg);
+    }
+
+    &-dots {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    &-dot {
+      width: 15px;
+      height: 16px;
+      background: lighten($accent, 30%) !important;
+      margin: 0 5px 10px;
+
+      &.active {
+        background: $accent !important;
+      }
+    }
+	}
+}
+
+.remodal {
+  text-align: left;
+  color: $text_color;  
+  padding: 50px;
+
+  &-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &-close {
+    left: auto;
+    top: 10px;
+    right: 10px;
+    background-image: url('../img/close.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    &:before {
+      font-size: 35px;
+      color: $text_color;
+      display: none;
+    }
+  }
+
+  &.remodal-small {
+    max-width: 490px;
+
+    form {
+      max-width: 230px;
+      margin: 0 auto;
+    }
+
+    .input-div {
+      margin-bottom: 15px;
+    }
+
+    .button {
+      width: 100%;
+    }
+  }
+}
+
+.hamburger {
+  background-color: $accent;
+  padding: 10px;
+	line-height: 0;
+	    
+  &-box {
+    width: 30px;
+  }
+
+  &-inner {
+    &, &:after, &:before {            
+      border-radius: 0;
+      width: 100%;
+      height: 2px;        
+    }
+
+    & {
+      margin-top: -1px;
+    }
+
+    &:before {
+      top: 0;
+    }
+
+    &:after {
+      bottom: -7px;
+    }
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  .remodal {
+    max-width: 80%;
+  }
+}
