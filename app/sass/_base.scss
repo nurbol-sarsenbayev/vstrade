@@ -20,17 +20,6 @@ img {
     max-width: 100%;
 }
 
-a {
-    color: $text_color;
-    outline: none;
-    font-weight: 500;
-    text-decoration: none;
-
-    .inverse & {
-        color: #fff;
-    }
-}
-
 input, button, textarea, a {
     outline: none;
 }
@@ -39,20 +28,28 @@ p {
 	margin: 0 0 1em 0;
 }
 
+a {
+  color: $text_color;
+}
+
 .inverse {
-    color: #fff;
+  color: #fff;
+}
+
+.break {
+  display: block;
 }
 
 .accent {
-    color: $accent;
+  color: $accent;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .light {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .text {
@@ -82,18 +79,19 @@ p {
   position: relative;
   display: inline-block;
   text-decoration: none;
-  padding: 12px 10px;
+  padding: 13px 10px;
   font-size: 16px;
   line-height: 1;
   font-weight: normal;
   text-align: center;
   color: #fff;
   background-color: $accent;
+  border-radius: 3px;
   border: 0;
   cursor: pointer;
 
   &:hover {
-    color: $text_color;
+    background-color: #f75151;
   }    
 
   &:active {
@@ -110,11 +108,11 @@ p {
 .input, .textarea {
   background: transparent;
   color: $text_color;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1;
-  border: 1px solid $accent;
+  border: 2px solid $accent;
   font-family: $default_family, sans-serif;
-  padding: 10.5px 15px;   
+  padding: 9px 10px;   
 
   &.error {
     border-color: red;
@@ -135,17 +133,17 @@ p {
 	}
 
 	&::-webkit-input-placeholder {
-    color: #535353;
+    color: #828386;
 		opacity: 1;
 	}
 	
 	&::-moz-placeholder {
-    color: #535353;
+    color: #828386;
 		opacity: 1;
 	}
 	
 	&:-ms-input-placeholder {
-    color: #535353;
+    color: #828386;
 		opacity: 1;
 	}
 	
@@ -166,32 +164,13 @@ p {
 .form {
   &-title {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 16px;
     text-align: center;
     margin-bottom: 25px;
   }
 
-  &-file {
-    text-align: left;
-    width: 180px;
-    font-size: 14px;
-    color: #535353;
-    margin: 0 30px 10px 0;
-
-    .accent-link {
-      font-size: 16px;
-      font-weight: normal;
-    }
-
-    input {
-      display: none;
-    }
-  }
-
-  form {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+  &-info {
+    font-size: 11px;
   }
 
   .input-div {

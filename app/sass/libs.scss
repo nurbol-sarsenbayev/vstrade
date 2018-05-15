@@ -19,19 +19,6 @@
 }
 
 .owl-carousel {
-  &.has-nav {
-    padding-right: 150px;
-    position: relative;
-
-    .owl {
-      &-nav {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-      }
-    }
-  }
-
 	.owl {
     &-item {
       img {
@@ -40,30 +27,28 @@
       }
     }
 
-    &-nav {
-      margin-top: 20px;
-    }
-
     &-prev, &-next {
-      width: 58px;
-      height: 58px;
-      border: 3px solid $accent !important;
-      background-image: url('../img/arrow-left-2.png') !important;
+      position: absolute;
+      top: 50%;
+      width: 34px;
+      height: 60px;
+      margin-top: -30px;
+      background-image: url('../img/arrow-left.png') !important;
       background-repeat: no-repeat !important;
       background-position: center center !important;
-      outline: 0;
     }
 
     &-prev {
-      margin-right: 3px;
+      left: 0;
     }
 
     &-next {
+      right: 0;
       transform: rotateZ(180deg);
     }
 
     &-dots {
-      margin-top: 30px;
+      margin-top: 20px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -85,7 +70,10 @@
 .remodal {
   text-align: left;
   color: $text_color;  
-  padding: 50px;
+  background-color: $gray;
+  background-image: url('../img/ornament.png');
+  background-repeat: no-repeat;
+  background-position: top right;
 
   &-title {
     font-size: 30px;
@@ -110,19 +98,22 @@
   }
 
   &.remodal-small {
-    max-width: 490px;
-
-    form {
-      max-width: 230px;
-      margin: 0 auto;
-    }
+    max-width: 410px;
+    text-align: center;
 
     .input-div {
-      margin-bottom: 15px;
+      width: 270px;
+      margin: 0 auto 15px;
     }
 
     .button {
-      width: 100%;
+      min-width: 270px;
+      width: auto;
+      display: block;
+    }
+
+    .form-info {
+      margin-bottom: 10px;
     }
   }
 }
