@@ -2,10 +2,10 @@
 
 $method = $_SERVER['REQUEST_METHOD'];
 
-$project_name = "Байдар";
-$admin_email  = "info@baydar.kz, client@marketing-time.kz";
-$server_mail = "<info@baydar.kz>";
-$form_subject = "Заявка";
+$project_name = "VSTRADE";
+$admin_email  = "info@klimat.vstrade.kz, client@marketing-time.kz";
+$server_mail = "<info@klimat.vstrade.kz>";
+$form_subject = "Климат (Лэндинг)";
 
 //Script Foreach
 $c = true;

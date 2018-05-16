@@ -92,7 +92,7 @@
             </div>
             <div class="banner-info">**Предложение действует до 31 мая 2018 года</div>
             <div class="banner-info">*** При заказе от 5 единиц товара</div>
-            <button class="button" data-remoda-target="">Успеть заказать по специальной цене</button>
+            <button class="button" data-remodal-target="special-modal">Успеть заказать по специальной цене</button>
           </div>    
         </div>
 
@@ -230,32 +230,32 @@
           <div class="sphere">
             <div class="sphere-image"><img src="./img/sphere-1.jpg" alt=""></div>
             <h4 class="sphere-title">Магазинам климатической техники</h4>
-            <button class="button" data-remodal-target="postavki-modal">Обсудить поставки на выгодных условиях</button>
+            <button class="button">Обсудить поставки на выгодных условиях</button>
           </div>
           <div class="sphere">
             <div class="sphere-image"><img src="./img/sphere-2.jpg" alt=""></div>
             <h4 class="sphere-title">Мастерам по установке кондиционеров</h4>
-            <button class="button" data-remodal-target="postavki-modal">Обсудить поставки на выгодных условиях</button>
+            <button class="button">Обсудить поставки на выгодных условиях</button>
           </div>
           <div class="sphere">
             <div class="sphere-image"><img src="./img/sphere-3.jpg" alt=""></div>
             <h4 class="sphere-title">Дилерам по продаже климатической техники</h4>
-            <button class="button" data-remodal-target="postavki-modal">Обсудить поставки на выгодных условиях</button>
+            <button class="button">Обсудить поставки на выгодных условиях</button>
           </div>
           <div class="sphere">
             <div class="sphere-image"><img src="./img/sphere-4.jpg" alt=""></div>
             <h4 class="sphere-title">Участникам тендеров</h4>
-            <button class="button" data-remodal-target="postavki-modal">Обсудить поставки на выгодных условиях</button>
+            <button class="button">Обсудить поставки на выгодных условиях</button>
           </div>
           <div class="sphere">
             <div class="sphere-image"><img src="./img/sphere-5.jpg" alt=""></div>
             <h4 class="sphere-title">Строительным компаниям</h4>
-            <button class="button" data-remodal-target="postavki-modal">Обсудить поставки на выгодных условиях</button>
+            <button class="button">Обсудить поставки на выгодных условиях</button>
           </div>
           <div class="sphere">
             <div class="sphere-image"><img src="./img/sphere-6.jpg" alt=""></div>
             <h4 class="sphere-title">Другим сферам</h4>
-            <button class="button" data-remodal-target="postavki-modal">Обсудить поставки на выгодных условиях</button>
+            <button class="button">Обсудить поставки на выгодных условиях</button>
           </div>
         </div>
       </div>
@@ -356,7 +356,7 @@
             </div>
             <div class="banner-info">**Предложение действует до 31 мая 2018 года</div>
             <div class="banner-info">*** При заказе от 5 единиц товара</div>
-            <button class="button" data-remoda-target="">Успеть заказать по специальной цене</button>
+            <button class="button" data-remodal-target="special-modal">Успеть заказать по специальной цене</button>
           </div>
         </div>
       </div>
@@ -495,6 +495,53 @@
         <button class="button ajax-submit" type="submit" id="uznat_optovyie_senyi">Узнать оптовые цены</button>
       </form>
     </div>    
+  </div>
+
+  <div class="remodal special" data-remodal-id="special-modal" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="form-title">
+      Закажите прямо сейчас кондиционер Fantasia FSV2-09HRI -FSV2-09HO-CK <br>
+      по цене 60 000 тг. вместо 65 000 тг. 
+    </div>
+
+
+    <div class="special-content">
+      <div class="banner">
+        <div class="banner-image">
+          <img src="./img/banner.png" alt="">
+        </div>
+        <div class="banner-info">**Предложение действует до 31 мая 2018 года</div>
+        <div class="banner-info">*** При заказе от 5 единиц товара</div>
+      </div>
+
+      <div class="form">
+        <form class="five_crm_form" action="/mail.php" method="post">
+          <input type="hidden" name="info" value="Получить прайс-лист">
+          <div class="input-div">
+            <input type="text" class="input" name="name" placeholder="Введите Фамилию и Имя*" required>
+            <span class="error-message">Заполните это поле</span>
+          </div>
+          <div class="input-div">
+            <input type="text" class="input" name="company" placeholder="Введите Название компании*" required>
+            <span class="error-message">Заполните это поле</span>
+          </div>            
+          <div class="input-div">
+            <input type="tel" class="input" name="phone" placeholder="Введите номер телефона*" required>
+            <span class="error-message">Заполните это поле</span>
+          </div>
+          <div class="input-div">
+            <input type="email" class="input" name="email" placeholder="Укажите e-mail*" required>
+            <span class="error-message">Заполните это поле</span>
+          </div> 
+          <div class="form-info">* Ваши данные в безопасности и не будут переданы третьим лицам</div>
+    
+          <button class="button ajax-submit" type="submit" id="uznat_optovyie_senyi">Узнать оптовые цены</button>
+        </form>
+      </div>
+    </div>
+
+    
   </div>
 
 	<link rel="stylesheet" href="./css/libs.min.css">

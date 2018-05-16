@@ -8,8 +8,11 @@ $(document).ready(function() {
   var utms = parseGET();
   var headerHeight = 106;
   var $hamburger = $(".hamburger");
-  // var sfer = $('[data-remodal-id="obsudit-sodrudni4estvo"]').remodal();
-  // var $sfer = $('[data-remodal-id="obsudit-sodrudni4estvo"]');
+
+  var $postavki = $('[data-remodal-id="postavki-modal"]');
+  var postavki = $postavki.remodal();
+  var $prais = $('[data-remodal-id="prais-modal"]');
+  var prais = $prais.remodal();
 
   if(utms && Object.keys(utms).length > 0) {
       window.sessionStorage.setItem('utms', JSON.stringify(utms));
@@ -82,6 +85,18 @@ $(document).ready(function() {
           $(this).removeClass('error');
       }
   }); 
+
+  $(".sphere .button").click(function() {
+    var title = $(this).siblings(".sphere-title").html();
+    $postavki.find('[name="info"]').val('Обсудить поставки на ' + title);
+    postavki.open();
+  });
+
+  $(".models-carousel").on("click", ".model .button", function() {
+    var title = $(this).siblings(".model-title").html();
+    $prais.find('[name="info"]').val('Получить прайс-лист на ' + title);
+    prais.open();
+  });
 
   $("input:required, textarea:required").keyup(function() {
       var $this = $(this);

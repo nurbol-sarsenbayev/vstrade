@@ -254,16 +254,29 @@
         }
       }
     }
-  }  
+  }
+
+  .special {
+    max-width: 440px;
+    &-content {
+      flex-direction: column;
+    }
+
+    .banner {
+      padding-right: 0;
+    }
+
+    .form {
+      text-align: center;
+    }
+  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479.5px) {
 
   .remodal {
-    &.remodal-small {
-      padding: 25px 15px;
-    }
+    padding: 40px 15px;
   }
 
 	.col-xxs-12 {
@@ -381,6 +394,22 @@
 
     &-info {
       font-size: 12px;
+    }
+  }
+
+  .special {
+    &-content {
+      flex-direction: column;
+    }
+
+    .banner {
+      padding: 15px;
+      margin: 0 -15px;
+      text-align: center;
+    }
+
+    .form {
+      text-align: center;
     }
   }
 

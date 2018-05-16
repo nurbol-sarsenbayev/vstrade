@@ -75,13 +75,6 @@
   background-repeat: no-repeat;
   background-position: top right;
 
-  &-title {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
   &-close {
     left: auto;
     top: 10px;
@@ -97,24 +90,23 @@
     }
   }
 
+  .input-div {
+    width: 270px;
+    margin: 0 auto 15px;
+  }
+
+  .button {
+    min-width: 270px;
+    width: auto;
+  } 
+
+  .form-info {
+    margin-bottom: 10px;
+  }
+
   &.remodal-small {
     max-width: 410px;
-    text-align: center;
-
-    .input-div {
-      width: 270px;
-      margin: 0 auto 15px;
-    }
-
-    .button {
-      min-width: 270px;
-      width: auto;
-      display: block;
-    }
-
-    .form-info {
-      margin-bottom: 10px;
-    }
+    text-align: center;       
   }
 }
 

@@ -307,7 +307,8 @@ body {
     &-form {
       form {
         display: flex;     
-        justify-content: space-between;   
+        justify-content: space-between; 
+        align-items: flex-start;  
       }
 
       .input-div {
@@ -483,6 +484,28 @@ body {
 
   .button {
     margin-top: 10px;
+  }
+}
+
+.special {
+  max-width: 750px;
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .banner {
+    border: 0;
+    width: auto;
+    max-width: none;
+    // max-width: 410px;
+    margin-left: -35px;
+    padding: 40px;
+
+    &:before {
+      top: 20px;
+    }
   }
 }
 
