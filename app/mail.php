@@ -3,8 +3,8 @@
 $method = $_SERVER['REQUEST_METHOD'];
 
 $project_name = "VSTRADE";
-$admin_email  = "info@klimat.vstrade.kz, client@marketing-time.kz";
-$server_mail = "<info@klimat.vstrade.kz>";
+$admin_email  = "dkravtsov@vstrade.kz, client@marketing-time.kz";
+$server_mail = "<dkravtsov@vstrade.kz>";
 $form_subject = "Климат (Лэндинг)";
 
 //Script Foreach
