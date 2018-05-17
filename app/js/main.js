@@ -94,7 +94,7 @@ $(document).ready(function() {
     postavki.open();
   });
 
-  $(".models-carousel").on("click", ".model .button", function() {
+  $(".section-models").on("click", ".model .button", function() {
     var title = $(this).siblings(".model-title").html();
     $prais.find('[name="info"]').val('Получить прайс-лист на ' + title);
     prais.open();
