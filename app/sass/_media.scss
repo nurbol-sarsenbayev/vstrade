@@ -379,7 +379,7 @@
   }
 
   .banner {
-    &:before {
+    &-lenta {
       top: 105px;
     }
 
@@ -411,7 +411,7 @@
       margin: 0 -15px;
       text-align: center;
 
-      &:before {
+      &-lenta {
         top: 0px;
       }
     }

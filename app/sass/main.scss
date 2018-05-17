@@ -461,8 +461,7 @@ body {
   border: 2px solid $accent;
   padding: 30px 10px 25px;
 
-  &:before {
-    content: "";
+  &-lenta {
     position: absolute;
     top: 127px;
     left: 0;
@@ -507,11 +506,10 @@ body {
     border: 0;
     width: auto;
     max-width: none;
-    // max-width: 410px;
     margin-left: -35px;
     padding: 40px;
 
-    &:before {
+    &-lenta {
       top: 20px;
     }
   }
