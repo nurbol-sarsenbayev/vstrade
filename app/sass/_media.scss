@@ -379,6 +379,10 @@
   }
 
   .banner {
+    &:before {
+      top: 105px;
+    }
+
     &-title {
       font-size: 16px;
       margin-bottom: 15px;
@@ -406,6 +410,10 @@
       padding: 15px;
       margin: 0 -15px;
       text-align: center;
+
+      &:before {
+        top: 0px;
+      }
     }
 
     .form {

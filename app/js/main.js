@@ -1,3 +1,5 @@
+new WOW().init();
+
 $(document).ready(function() {
 
   var $wnd = $(window);
@@ -163,7 +165,7 @@ $(document).ready(function() {
   $(".models-carousel").owlCarousel({
     nav: false,
     dots: true,
-    loop: true,
+    loop: false,
     smartSpeed: 500,
     margin: 30,
     navText: ['', ''],

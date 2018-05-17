@@ -99,11 +99,11 @@ body {
     display: flex;
     justify-content: center;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 155px;
   }
 
   li {
-    margin: 0px 10px;
+    margin: 0px 5px;
   }
 
   a {
@@ -111,7 +111,7 @@ body {
     line-height: 1;
     text-decoration: none;
     font-weight: normal;
-    padding: 8px 16px;
+    padding: 8px 14px;
 
     &.link:hover, &.active {
       background-color: $accent;  
@@ -205,6 +205,10 @@ body {
         font-weight: 600;
         line-height: 1;
         margin-left: -30px;
+      }
+
+      &-text {
+        font-weight: 600;
       }
     }
   }
@@ -480,6 +484,10 @@ body {
   &-info {
     font-weight: 600;
     margin-bottom: 5px;
+  }
+
+  .accent {
+    font-weight: bold;
   }
 
   .button {
