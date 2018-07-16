@@ -453,6 +453,14 @@ body {
   }
 }
 
+.timer {
+  &-element {
+    & > span:first-child {
+      // font-weight: bold;
+    }
+  }
+}
+
 .banner {
   position: relative;
   max-width: 453px;
@@ -463,26 +471,47 @@ body {
 
   &-lenta {
     position: absolute;
-    top: 127px;
+    top: 137px;
     left: 0;
     width: 149px;
     height: 43px;
     background-image: url('../img/banner-lenta.png');
     background-repeat: no-repeat;
+
+    &--100 {
+      background-image: url('../img/banner-lenta-100.png');
+    }
   }
 
   &-title {
     font-size: 18px;
-    margin: 0 0 35px;    
+    margin: 0 0 20px;    
   }
 
   &-image {
     margin-bottom: 25px;
+
+    &--flex {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+
+      .banner-info {
+        max-width: 130px;
+        margin: 0 10px 0 20px;
+        text-align: left;
+      }
+    }
   }
 
   &-info {
     font-weight: 600;
-    margin-bottom: 5px;
+  }
+
+  &-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .accent {
@@ -502,16 +531,34 @@ body {
     justify-content: space-between;
   }
 
+  .form {    
+    width: 270px;
+
+    &-title {
+      font-size: 18px;
+    }  
+  }
+
   .banner {
     border: 0;
     width: auto;
     max-width: none;
     margin-left: -35px;
-    padding: 40px;
+    padding: 0 20px 20px;
 
     &-lenta {
-      top: 20px;
+      top: 30px;
     }
+
+    &-image {
+      text-align: center;
+
+      img {
+        margin-bottom: 10px;
+      }
+    }
+
+    
   }
 }
 
